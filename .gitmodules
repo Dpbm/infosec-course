@@ -4,3 +4,6 @@
 [submodule "helmet-infosec-course"]
 	path = helmet-infosec-course
 	url = https://github.com/Dpbm/helmet-infosec-course.git
+[submodule "python-infosec-course"]
+	path = python-infosec-course
+	url = https://github.com/Dpbm/python-infosec-course.git
