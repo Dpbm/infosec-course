@@ -2,15 +2,16 @@ const express = require('express');
 const helmet = require('helmet');
 const app = express();
 
-app.use(helmet.hidePoweredBy());
+const ninetyDaysInSeconds = 90 * 24 * 60 * 60;
 
-
-
-
-
-
-
-
+app.use(helmet({
+  frameguard: { action: 'deny' },
+  hsts: { maxAge: ninetyDaysInSeconds, force: true },
+  contentSecurityPolicy: {
+    directives: { defaultSrc: ["'self'"], scriptSrc: ["'self'", 'trusted-cdn.com'] }
+  },
+  noChace: false,
+}))
 
 
 
