@@ -1,0 +1,6 @@
+[submodule "bcrypt-infosec-course"]
+	path = bcrypt-infosec-course
+	url = https://github.com/Dpbm/bcrypt-infosec-course.git
+[submodule "helmet-infosec-course"]
+	path = helmet-infosec-course
+	url = https://github.com/Dpbm/helmet-infosec-course.git
